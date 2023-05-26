@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+</style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html">
+          <img src="logo.jpg" alt="Warner Bros. Logo"></a>
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="Movies.html">Movies</a></li>
+            <li><a href="TvShows.html">TV Shows</a></li>
+            <li><a href="Games&Apps.html">Games & Apps</a></li>
+            <li><a href="Collections.html">Collections</a></li>
+          </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="social-media-links">
+              <a href="https://www.facebook.com/WarnerBrosPictures/"><img src="facebook-logo.png" alt="Facebook"></a>
+              <a href="https://twitter.com/warnerbros?lang=en"><img src="twitter-logo.jpg" alt="Twitter"></a>
+              <a href="https://www.youtube.com/@WarnerBrosPictures"><img src="youtube-logo.png" alt="youtube"></a>
+            </div>
+          <form class="search-form" action="#" method="get">
+            <input type="text" name="search" placeholder="Search">
+            <button type="submit" class="search-button">Search</button>
+          </form>
+        </div>
+      </nav>
+<br>
+
+      <div class="video-player">
+        <video id="trailer-video" src="MEG 2- THE TRENCH - OFFICIAL TRAILER.mp4" autoplay muted></video>
+        <div class="controls">
+          <button id="previous-btn">Previous</button>
+          <button id="play-btn">Play</button>
+          <button id="next-btn">Next</button>
+        </div>
+      </div>
+      
+      
+<script>
+
+const videoPlayer = document.getElementById('trailer-video');
+const playButton = document.getElementById('play-btn');
+const nextButton = document.getElementById('next-btn');
+const previousButton = document.getElementById('previous-btn');
+const videoTitle = document.querySelector('.video-title');
+
+const videoList = [
+  { title: 'Meg 2', src: 'MEG 2- THE TRENCH - OFFICIAL TRAILER.mp4' },
+  { title: 'Blue Beetle', src: 'Blue Beetle – Official Trailer.mp4' },
+  // Add more video objects for other highlights
+];
+
+let currentVideoIndex = 0;
+
+function playVideo() {
+  if (videoPlayer.paused) {
+    videoPlayer.play();
+    playButton.textContent = 'Pause';
+  } else {
+    videoPlayer.pause();
+    playButton.textContent = 'Play';
+  }
+}
+
+function nextVideo() {
+  currentVideoIndex = (currentVideoIndex + 1) % videoList.length;
+  loadVideo();
+}
+
+function previousVideo() {
+  currentVideoIndex = (currentVideoIndex - 1 + videoList.length) % videoList.length;
+  loadVideo();
+}
+
+function loadVideo() {
+  const { title, src } = videoList[currentVideoIndex];
+  videoPlayer.src = src;
+  videoTitle.textContent = title;
+  videoPlayer.pause();
+  playButton.textContent = 'Play';
+  videoPlayer.play(); // Autoplay the video
+}
+
+playButton.addEventListener('click', playVideo);
+nextButton.addEventListener('click', nextVideo);
+previousButton.addEventListener('click', previousVideo);
+
+loadVideo(); // Load the initial video and autoplay
+
+
+</script>
+<br>
+<div class="genre-buttons">
+    <button class="genre-button">Action</button>
+    <button class="genre-button">Romcom</button>
+    <button class="genre-button">Horror</button>
+    <button class="genre-button">Thriller</button>
+    <button class="genre-button">Drama</button>
+    <button class="genre-button">Animation</button>
+  </div>
+  
+
+      
+<div class="trending">
+    <h1>Trending Movies</h1>
+    <div class="trending-slideshow">
+      <div class="trending-slide">
+        <a href="Kong.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BMzk2ZmYxNTUtODlhMi00NzE2LTkwMTctYjg0ODQ1ZjkyNzJmXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" alt="Godzilla vs Kong">
+          <h3 class="homepage-text">Godzilla vs Kong</h3>
+        </a>
+      </div>
+      <div class="trending-slide">
+        <a href="Justice League.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" alt="Zack Snyder's Justice League">
+          <h3 class="homepage-text">Zack Snyder's Justice League</h3>
+        </a>
+      </div>
+      <div class="trending-slide">
+        <a href="Sandman.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BYTM0NjZjYjItM2JiYS00NmU5LWJmMTMtZjQ0OWU3Mzk1ZWZjXkEyXkFqcGdeQXVyMTAxNDE3MTE5._V1_.jpg" alt="The Sandman">
+          <h3 class="homepage-text">The Sandman</h3>
+        </a>
+      </div>
+      <div class="trending-slide">
+        <a href="Batman.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_FMjpg_UX1000_.jpg" alt="The Batman">
+          <h3 class="homepage-text">The Batman</h3>
+        </a>
+      </div>
+      <div class="trending-slide">
+        <a href="Gotham.html">
+          <img src="https://i.ebayimg.com/images/g/FSIAAOSwg2xZehD6/s-l1600.jpg" alt="Gotham">
+          <h3 class="homepage-text">Gotham</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="trending">
+    <h1>Showing</h1>
+    <div class="trending-slideshow">
+      <div class="trending-slide">
+        <a href="Kong.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BMzk2ZmYxNTUtODlhMi00NzE2LTkwMTctYjg0ODQ1ZjkyNzJmXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" alt="Godzilla vs Kong">
+          <h3 class="homepage-text">Godzilla vs Kong</h3>
+        </a>
+      </div>
+      <div class="trending-slide">
+        <a href="Justice League.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" alt="Zack Snyder's Justice League">
+          <h3 class="homepage-text">Zack Snyder's Justice League</h3>
+        </a>
+      </div>
+      <div class="trending-slide">
+        <a href="Shazam.html">
+          <img src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/shazam2_keyart.jpg" alt="Shazam Fury of the Gods">
+          <h3 class="homepage-text">Shazam Fury of the Gods</h3>
+        </a>
+      </div>
+      <div class="trending-slide">
+        <a href="Batman.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_FMjpg_UX1000_.jpg" alt="The Batman">
+          <h3 class="homepage-text">The Batman</h3>
+        </a>
+      </div>
+      <div class="trending-slide">
+        <a href="TheMatrix.html">
+          <img src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/mtrx4_keyart.jpg" alt="The Matrix Ressurections">
+          <h3 class="homepage-text">The Matrix Ressurections</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer>
+    <ul class="footer-links">
+      <li><a href="Feedback.html">Feedback</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="Favourites.html">Favorites</a></li>
+      <li><a href="Partners.html">Our Partners</a></li>
+      <li><a href="Terms.html">Terms and Conditions</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
