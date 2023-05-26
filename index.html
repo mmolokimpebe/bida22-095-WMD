@@ -1,14 +1,137 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Our Services</title>
-  </head>
-  <body>
-    <header>
-      <h1>Our Services</h1>
-    </header>
-    <main>
-      <section>
-        <h2>Sell/Buy</h2>
-        <p>Here you can provide information about your first service. You can include details such as what it is, how it works, and who it is for.</p>
-      </section>
+<head>
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+main {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.movie img {
+  max-width: 100%;
+  height: 500px;
+}
+
+.movie h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.movie p {
+  font-size: 16px;
+  color: #777;
+}
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.get-started {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #0058cf;
+}
+</style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html">
+          <img src="logo.jpg" alt="Warner Bros. Logo"></a>
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="Movies.html">Movies</a></li>
+            <li><a href="TvShows.html">TV Shows</a></li>
+            <li><a href="Games&Apps.html">Games & Apps</a></li>
+            <li><a href="Collections.html">Collections</a></li>
+          </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="social-media-links">
+              <a href="https://www.facebook.com/WarnerBrosPictures/"><img src="facebook-logo.png" alt="Facebook"></a>
+              <a href="https://twitter.com/warnerbros?lang=en"><img src="twitter-logo.jpg" alt="Twitter"></a>
+              <a href="https://www.youtube.com/@WarnerBrosPictures"><img src="youtube-logo.png" alt="youtube"></a>
+            </div>
+          <form class="search-form" action="#" method="get">
+            <input type="text" name="search" placeholder="Search">
+            <button type="submit" class="search-button">Search</button>
+          </form>
+        </div>
+      </nav>
+<br>
+
+<main>
+    <h2>Welcome to WarnerBros</h2>
+    <div class="movies">
+      <div class="movie">
+        <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" alt="Zack Snyder's Justice League">
+        <h3>Zack Snyder's Justice League</h3>
+      </div>
+      <div class="movie">
+        <img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_FMjpg_UX1000_.jpg" alt="The Batman">
+        <h3>The Batman</h3>
+      </div>
+      <div class="movie">
+        <img src="https://m.media-amazon.com/images/M/MV5BMzk2ZmYxNTUtODlhMi00NzE2LTkwMTctYjg0ODQ1ZjkyNzJmXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" alt="Godzilla vs Kong">
+        <h3>Godzilla vs Kong</h3>
+      </div>
+    </div>
+
+    <div class="get-started">
+        <a href="Movies.html" class="btn">Get Started</a>
+      </div>
+  </main>
+  
+
+  <footer>
+    <ul class="footer-links">
+      <li><a href="Feedback.html">Feedback</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="Favourites.html">Favorites</a></li>
+      <li><a href="Partners.html">Our Partners</a></li>
+      <li><a href="Terms.html">Terms and Conditions</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
