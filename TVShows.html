@@ -34,17 +34,17 @@
           </form>
         </div>
       </nav>
-<br>
+
 
       <div class="video-player">
-        <video id="trailer-video" src="MEG 2- THE TRENCH - OFFICIAL TRAILER.mp4" autoplay muted></video>
+        <video id="trailer-video" src="MEG 2- THE TRENCH - OFFICIAL TRAILER.mp4"></video>
         <div class="controls">
           <button id="previous-btn">Previous</button>
           <button id="play-btn">Play</button>
           <button id="next-btn">Next</button>
         </div>
       </div>
-      
+
       
 <script>
 
@@ -88,18 +88,16 @@ function loadVideo() {
   videoTitle.textContent = title;
   videoPlayer.pause();
   playButton.textContent = 'Play';
-  videoPlayer.play(); // Autoplay the video
 }
 
 playButton.addEventListener('click', playVideo);
 nextButton.addEventListener('click', nextVideo);
 previousButton.addEventListener('click', previousVideo);
 
-loadVideo(); // Load the initial video and autoplay
-
+loadVideo(); // Load the initial video
 
 </script>
-<br>
+<br><br>
 <div class="genre-buttons">
     <button class="genre-button">Action</button>
     <button class="genre-button">Romcom</button>
@@ -111,78 +109,92 @@ loadVideo(); // Load the initial video and autoplay
   
 
       
-<div class="trending">
-    <h1>Trending Movies</h1>
+  <div class="trending">
+    <h1 class="homepage-text">BrandNew</h1>
     <div class="trending-slideshow">
       <div class="trending-slide">
-        <a href="Kong.html">
-          <img src="https://m.media-amazon.com/images/M/MV5BMzk2ZmYxNTUtODlhMi00NzE2LTkwMTctYjg0ODQ1ZjkyNzJmXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" alt="Godzilla vs Kong">
-          <h3 class="homepage-text">Godzilla vs Kong</h3>
+        <a href="FlashShow.html">
+          <img src="https://sportshub.cbsistatic.com/i/2023/01/11/ca3a92f5-5e84-4f3f-bed5-3aaaf1f2ff3a/the-flash-final-season-9-poster.jpg?auto=webp&width=1080&height=1350&crop=0.8:1,smart" alt="The Flash">
+          <br><br><br><br><br>
+          <h3>The Flash</h3>
         </a>
       </div>
       <div class="trending-slide">
-        <a href="Justice League.html">
-          <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" alt="Zack Snyder's Justice League">
-          <h3 class="homepage-text">Zack Snyder's Justice League</h3>
+        <a href="Sheldon.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BZDg3MGNhYjItZGU2Yi00MzU4LWE4NGUtYjA2OTVjNGUyMjE4XkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_FMjpg_UX1000_.jpg" alt="Young Sheldon">
+          <h3>Young Sheldon</h3>
         </a>
       </div>
       <div class="trending-slide">
-        <a href="Sandman.html">
-          <img src="https://m.media-amazon.com/images/M/MV5BYTM0NjZjYjItM2JiYS00NmU5LWJmMTMtZjQ0OWU3Mzk1ZWZjXkEyXkFqcGdeQXVyMTAxNDE3MTE5._V1_.jpg" alt="The Sandman">
-          <h3 class="homepage-text">The Sandman</h3>
+        <a href="TedLasso.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BMTdmZjBjZjQtY2JiNS00Y2ZlLTg2NzgtMjUzMGY2OTVmOWJiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" alt="Ted Lasso">
+          <h3>Ted Lasso</h3>
         </a>
       </div>
       <div class="trending-slide">
-        <a href="Batman.html">
-          <img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_FMjpg_UX1000_.jpg" alt="The Batman">
-          <h3 class="homepage-text">The Batman</h3>
+        <a href="Titans.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BNjY4MTE3MWYtYzU3YS00Y2UxLTk2NDMtMjJlODk2MzBmOTdiXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg" alt="Titans">
+          <h3>Titans</h3>
         </a>
       </div>
       <div class="trending-slide">
         <a href="Gotham.html">
-          <img src="https://i.ebayimg.com/images/g/FSIAAOSwg2xZehD6/s-l1600.jpg" alt="Gotham">
-          <h3 class="homepage-text">Gotham</h3>
+          <img src="https://m.media-amazon.com/images/M/MV5BMmUyOTdjMGEtN2RmNC00YzUwLTg5ZDEtMTI1NWE4ZjcwN2ViXkEyXkFqcGdeQXVyNTA3MTU2MjE@._V1_FMjpg_UX1000_.jpg" alt="Gotham">
+          <h3>Gotham</h3>
         </a>
       </div>
     </div>
   </div>
+
   
 
   <div class="trending">
-    <h1>Showing</h1>
+    <h1 class="homepage-text">Binge Watch</h1>
     <div class="trending-slideshow">
       <div class="trending-slide">
-        <a href="Kong.html">
-          <img src="https://m.media-amazon.com/images/M/MV5BMzk2ZmYxNTUtODlhMi00NzE2LTkwMTctYjg0ODQ1ZjkyNzJmXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" alt="Godzilla vs Kong">
-          <h3 class="homepage-text">Godzilla vs Kong</h3>
+        <a href="BigBang.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BY2FmZTY5YTktOWRlYy00NmIyLWE0ZmQtZDg2YjlmMzczZDZiXkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_.jpg" alt="The Big Bang Theory">
+          <h3>The Big Bang Theory</h3>
         </a>
       </div>
       <div class="trending-slide">
-        <a href="Justice League.html">
-          <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" alt="Zack Snyder's Justice League">
-          <h3 class="homepage-text">Zack Snyder's Justice League</h3>
+        <a href="Friends.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" alt="Friends">
+          <h3>Friends</h3>
         </a>
       </div>
       <div class="trending-slide">
-        <a href="Shazam.html">
-          <img src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/shazam2_keyart.jpg" alt="Shazam Fury of the Gods">
-          <h3 class="homepage-text">Shazam Fury of the Gods</h3>
+        <a href="You.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BZDJjOTg4OWYtYWIyOS00MjQ3LTg5ZDktYzU2N2RkNmYzNjZlXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_FMjpg_UX1000_.jpg" alt="You">
+          <h3>You</h3>
         </a>
       </div>
       <div class="trending-slide">
-        <a href="Batman.html">
-          <img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_FMjpg_UX1000_.jpg" alt="The Batman">
-          <h3 class="homepage-text">The Batman</h3>
+        <a href="Abbott.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BOGRlMmE3MzgtNDlhYi00MWQyLWE2MmQtMDE2MjdlNDUxMWE5XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_.jpg" alt="Abbott Elementary">
+          <h3>Abbott Elementary</h3>
         </a>
       </div>
       <div class="trending-slide">
-        <a href="TheMatrix.html">
-          <img src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/mtrx4_keyart.jpg" alt="The Matrix Ressurections">
-          <h3 class="homepage-text">The Matrix Ressurections</h3>
+        <a href="Lucifer.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BNDJjMzc4NGYtZmFmNS00YWY3LThjMzQtYzJlNGFkZGRiOWI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg" alt="Lucifer">
+          <h3>Lucifer</h3>
+        </a>
+      </div>
+      <div class="trending-slide">
+        <a href="VampireDiaries.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BMDk3YzgxNDQtNTEzOS00NDMyLWFlYmYtYTZlMDk1NDkxNmMyXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_FMjpg_UX1000_.jpg" alt="The Vampire Diaries">
+          <h3>The Vampire Diaries</h3>
+        </a>
+      </div>
+      <div class="trending-slide">
+        <a href="Two and a half men.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BOTI2MjIzN2ItZDg0OS00MTlhLWIzMTMtYWI4ZTA0NGE4NDJlXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" alt="Two and a Half Men">
+          <h3>Two and a Half Men</h3>
         </a>
       </div>
     </div>
-  </div>
+  </div>  
   
 
   <footer>
@@ -194,5 +206,6 @@ loadVideo(); // Load the initial video and autoplay
       <li><a href="Terms.html">Terms and Conditions</a></li>
     </ul>
   </footer>
+  
 </body>
 </html>
