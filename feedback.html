@@ -5,9 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
-
-
-
+font  {
+color:white;
+}
+h1{
+color: white;
+font-size: 20px;
+}
 
 </style>
 </head>
@@ -20,17 +24,17 @@
         </div>
         <div class="navbar-links">
           <ul>
-            <li><a href="movies.html">Movie&S</a></li>
+            <li><a href="movies.html">Movies</a></li>
             <li><a href="tvshows.html">Tv-Shows</a></li>
-            <li><a href="Games&Apps.html">Games & Apps</a></li>
+            <li><a href="games&apps.html">Games & Apps</a></li>
             <li><a href="collections.html">Collections</a></li>
           </ul>
         </div>
-        <div class="navbar-right">
+         <div class="navbar-right">
             <div class="social-media-links">
               <a href="https://www.facebook.com/WarnerBrosPictures/"><img src="facebook-logo.png" alt="Facebook"></a>
-              <a href="https://twitter.com/warnerbros?lang=en"><img src="twitter-logo.jpg" alt="Twitter"></a>
-              <a href="https://www.youtube.com/@WarnerBrosPictures"><img src="youtube-logo.png" alt="youtube"></a>
+              <img src="images/twitterlogo.jpg" alt="Twitter">
+              <img src="images/youtube-logo.png" alt="youtube">
             </div>
           <form class="search-form" action="#" method="get">
             <input type="text" name="search" placeholder="Search">
@@ -42,35 +46,35 @@
 
       <h2>Feedback Form</h2>
       <form id="feedback-form" action="send-feedback.php" method="POST">
-        <label for="achieved-goals">Did you achieve your goals?</label>
+        <label for="achieved-goals"><h1>Did you achieve your goals?</h1></label>
         <select name="achieved-goals" required>
           <option value="yes">Yes</option>
           <option value="partially">Partially</option>
           <option value="no">No</option>
         </select>
     
-        <label for="goal-reason"><p color=white What was the reason for your goals?</label>
+        <label for="goal-reason"><h1> What was the reason for your goals?</h1></label>
         <select name="goal-reason" required>
           <option value="movie-check">Movie Check</option>
           <option value="where-to-watch">Where to Watch</option>
           <option value="movie-release">Movie Release</option>
         </select>
     
-        <label for="not-achieved-reason">What was the reason you could not achieve your goals?</label>
+        <label for="not-achieved-reason"><h1>What was the reason you could not achieve your goals?</h1></label>
         <select name="not-achieved-reason" required>
           <option value="form-does-not-work">Form does not work</option>
           <option value="website-navigation-is-bad">Website navigation is bad</option>
         </select>
     
-        <label for="suggestions">Suggestions</label>
+        <label for="suggestions"><h1>Suggestions</h1></label>
         <textarea name="suggestions" placeholder="Enter your suggestions here"></textarea>
     
         <input type="submit" value="Submit">
       </form>
     
       <div id="thank-you-message" class="thank-you" style="display: none;">
-        <p>Thank you for your feedback!</p>
-        <p>You will be redirected to the homepage shortly.</p>
+        <h1>Thank you for your feedback!</h1>
+        <h1>You will be redirected to the homepage shortly.</h1>
       </div>
     
       <script>
